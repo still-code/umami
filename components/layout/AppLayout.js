@@ -6,6 +6,7 @@ import useRequireLogin from 'hooks/useRequireLogin';
 import useConfig from 'hooks/useConfig';
 import { CURRENT_VERSION } from 'lib/constants';
 import styles from './AppLayout.module.css';
+import Footer from './Footer';
 
 export function AppLayout({ title, children }) {
   const { user } = useRequireLogin();
@@ -19,7 +20,7 @@ export function AppLayout({ title, children }) {
     <div className={styles.layout} data-app-version={CURRENT_VERSION}>
       <UpdateNotice user={user} config={config} />
       <Head>
-        <title>{title ? `${title} | umami` : 'umami'}</title>
+        <title>{title ? `${title} | Still Code` : 'Still Code'}</title>
       </Head>
       <nav className={styles.nav}>
         <NavBar />

@@ -29,7 +29,7 @@ export function NavBar() {
             <Icon size="lg">
               <Icons.Logo />
             </Icon>
-            <Text className={styles.text}>umami</Text>
+            <Text className={styles.text}>Still Code</Text>
           </div>
           <div className={styles.links}>
             {links.map(({ url, label }) => {
